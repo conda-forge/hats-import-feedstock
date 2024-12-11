@@ -16,22 +16,21 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - setuptools >=62
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.9
+    - python >=3.10
     - dask-core >=2024.3.0
     - distributed >=2024.3.0
     - deprecated
-    - hats >=0.4.2
+    - hats >=0.4.5
     - ipykernel
     - numpy
     - pandas
     - pyarrow
     - pyyaml
-    - scipy
     - tqdm
     - universal_pathlib
 
