@@ -1,5 +1,5 @@
 {% set name = "hats-import" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/astronomy-commons/hats-import/archive/v{{ version }}.tar.gz
-  sha256: 6163f030f3a2dc54a63fb8b7ba8fe458585dbc9a3b2cd5aca0ac31295398eaa0
+  sha256: 78cf2f808c762db5e7cdaf65da2255ad2b7e9b566c91e2092daa89b311e08d74
 
 build:
   noarch: python
@@ -16,22 +16,21 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - setuptools >=62
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.9
+    - python >=3.10
     - dask-core >=2024.3.0
     - distributed >=2024.3.0
     - deprecated
-    - hats >=0.4.2
+    - hats >=0.4.5
     - ipykernel
     - numpy
     - pandas
     - pyarrow
     - pyyaml
-    - scipy
     - tqdm
     - universal_pathlib
 
