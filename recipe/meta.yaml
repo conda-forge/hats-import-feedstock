@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "hats-import" %}
 {% set version = "0.4.3" %}
 
@@ -12,16 +13,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=62
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - dask-core >=2024.3.0
     - distributed >=2024.3.0
     - deprecated
@@ -45,6 +46,7 @@ test:
     - pytest
     - pytest-timeout
     - ray-core
+    - python {{ python_min }}
   source_files:
     - tests
     - pyproject.toml
