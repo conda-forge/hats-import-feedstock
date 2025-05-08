@@ -23,10 +23,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - dask-core >=2024.3.0
-    - distributed >=2024.3.0
+    - dask-core >=2024.3.0,<2025.4.0
+    - distributed >=2024.3.0,<2025.4.0
     - deprecated
-    - hats >=0.5.1
+    - hats >=0.5.2
     - ipykernel
     - numpy
     - pandas
