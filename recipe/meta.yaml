@@ -26,7 +26,7 @@ requirements:
     - dask-core >=2024.3.0,<2025.4.0
     - distributed >=2024.3.0,<2025.4.0
     - deprecated
-    - hats >=0.5.2
+    - hats >=0.5.3
     - ipykernel
     - numpy
     - pandas
@@ -45,7 +45,7 @@ test:
     - pip
     - pytest
     - pytest-timeout
-    - ray-core
+    - pytest-mock
     - python {{ python_min }}
   source_files:
     - tests
