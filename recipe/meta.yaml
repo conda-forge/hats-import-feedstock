@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "hats-import" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/astronomy-commons/hats-import/archive/v{{ version }}.tar.gz
-  sha256: 29ecec82f308be9ebe42dc2d65b5ee009b88e07efd2e7dc1f8077b9373e96ee8
+  sha256: 2f7d3b753a24a202e9742fc83e9461da1b75422fd19cf9f4b2670046cc27da7e
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - dask-core >=2024.3.0,<2025.4.0
     - distributed >=2024.3.0,<2025.4.0
     - deprecated
-    - hats >=0.5.3
+    - hats >=0.6.1
     - ipykernel
     - numpy
     - pandas
