@@ -26,14 +26,14 @@ requirements:
     - dask-core >=2024.3.0,<2025.4.0
     - distributed >=2024.3.0,<2025.4.0
     - deprecated
-    - hats >=0.6.5
+    - hats >=0.6.5,<0.7.0
     - ipykernel
     - numpy
     - pandas
     - pyarrow
     - pyyaml
     - tqdm
-    - universal_pathlib
+    - universal_pathlib >=0.2.2,<0.3.0
 
 test:
   imports:
