@@ -26,6 +26,7 @@ requirements:
     - cloudpickle >=3.0.0
     - dask-core >=2024.3.0,<2025.4.0
     - deprecated
+    - distributed
     - hats >=0.7.1
     - ipykernel
     - numpy >=2.2.0,<3
