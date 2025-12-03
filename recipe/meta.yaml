@@ -27,8 +27,9 @@ requirements:
     - dask-core >=2024.3.0,<2025.4.0
     - deprecated
     - distributed
-    - hats >=0.7.1
+    - hats >=0.7.3,<0.8
     - ipykernel
+    - nested-pandas >=0.6.3,<0.7.0
     - numpy >=2.2.0,<3
     - pandas >=2.0
     - tqdm >=4.59.0
