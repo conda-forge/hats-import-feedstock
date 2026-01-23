@@ -1,4 +1,4 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "hats-import" %}
 {% set version = "0.8.0" %}
 
@@ -27,9 +27,9 @@ requirements:
     - dask-core >=2024.3.0,<2025.4.0
     - deprecated
     - distributed
-    - hats >=0.7.3,<0.8
+    - hats >=0.8.0,<0.9
     - ipykernel
-    - nested-pandas >=0.6.3,<0.7.0
+    - nested-pandas >=0.6.7,<0.7.0
     - numpy >=2.2.0,<3
     - pandas >=2.0
     - tqdm >=4.59.0
