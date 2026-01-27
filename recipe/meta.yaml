@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/astronomy-commons/hats-import/archive/v{{ version }}.tar.gz
-  sha256: bea9e3cd8c5fa7f37bfaf3745e5b9369f89ae57f214572b515bb0d2823272c1f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hats-import-{{ version }}.tar.gz
+  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
