@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hats-import-{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hats_import-{{ version }}.tar.gz
+  sha256: 13e257cc104c426f21d8134999a92d4d95f9f86dbf26f9748db0d7f279927c57
 
 build:
   noarch: python
