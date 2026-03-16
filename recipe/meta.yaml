@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "hats-import" %}
-{% set version = "0.8.2" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hats_import-{{ version }}.tar.gz
-  sha256: 152fa3ad23f3148d128520079b5205c2d36853ab95c71c71082607e22e0c52bd
+  sha256: f750627c9f631e4f751ac977314c727b7de6b12c4a1e3857680b283790898238
 
 build:
   noarch: python
